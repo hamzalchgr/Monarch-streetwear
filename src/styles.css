@@ -23,18 +23,17 @@
 @layer base {
   html {
     scroll-behavior: smooth;
-    font-family: var(--font-secondary);
   }
 
   body {
-    @apply bg-background text-text-strong;
+    @apply bg-background text-text-strong h-[1000px] font-secondary leading-tight;
   }
 
   h1,
   h2,
   h3,
   h4 {
-    @apply font-primary -tracking-widest;
+    @apply font-primary tracking-[-0.01em] leading-tight;
   }
 }
 
@@ -76,9 +75,9 @@
 
 @layer components {
   header {
-    @apply fixed w-full;
+    @apply fixed top-0 w-full;
   }
-
+  
   .nav-menu {
     @apply px-4 md:px-12 lg:px-20 py-2.5 grid grid-cols-2 md:grid-cols-3;
   }
@@ -93,6 +92,18 @@
 
   .icon-link {
     @apply h-10 w-10 grid place-items-center transition-all duration-200 hover:bg-surface rounded-full flex-none;
+  }
+
+  .nav-link {
+    @apply relative font-medium uppercase;
+  }
+
+  .nav-link::after {
+    @apply content-[''] absolute bottom-0 left-0 h-px w-0 bg-primary transition-all duration-200 ease-in-out;
+  }
+
+  .nav-link:hover::after {
+    @apply w-full;
   }
 
   .menu-icon {
