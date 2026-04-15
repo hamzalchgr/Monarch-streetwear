@@ -1,11 +1,11 @@
 import clsx from 'clsx';
 
-const Button = ({ children, variant, size, className, ...rest }) => {
+const Button = ({ children, variant, size, className, type, ...rest }) => {
   const base = "transition-all duration-200 cursor-pointer uppercase font-medium flex justify-center items-center rounded-full";
   const variants = {
     primary: "bg-primary hover:bg-secondary text-accent",
     secondary: "bg-transparent hover:bg-surface text-text-strong",
-    outline: "border border-solid border-border hover:bg-surface",
+    outline: "border border-solid border-primary hover:bg-surface",
   }
   const sizes= {
     sm: "w-10 h-10",
@@ -15,7 +15,7 @@ const Button = ({ children, variant, size, className, ...rest }) => {
 
   return (
     <button
-      type="button"
+      type={type || "button"}
       className={clsx(base, variants[variant], sizes[size], className)}
       {...rest}
     >{children}</button>

@@ -31,7 +31,7 @@ const Header = () => {
               <ShoppingBag size={20} />
             </Link>
 
-            <Link className="icon-link" to="/account">
+            <Link className="icon-link" to="/auth">
               <User size={20} />
             </Link>
 

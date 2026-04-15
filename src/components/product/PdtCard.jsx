@@ -4,7 +4,7 @@ import { formatPrice } from "../../utils/formatPrice";
 const PdtCard = ({ id, title, price, images }) => {
   return (
     <Link to={`/productPage/${id}`} className="flex flex-col gap-4 group">
-      <div className="h-full w-full aspect-square overflow-hidden">
+      <div className="h-full w-full aspect-square overflow-hidden bg-surface">
         <img
           className="h-full w-full object-center object-cover group-hover:scale-105 transition-all duration-200 ease-in-out"
           src={images[0]}
