@@ -2,7 +2,7 @@ export const navLinks = [
   {
     id: "shop",
     label: "shop",
-    path: "/shop",
+    path: "/shop/all",
   },
   {
     id: "blog",
@@ -14,4 +14,12 @@ export const navLinks = [
     label: "contact",
     path: "/contact",
   },
+];
+
+export const CATEGORIES = [
+  { id: "all", name: "All" },
+  { id: "outerwear", name: "Outerwear" },
+  { id: "tops", name: "Tops" },
+  { id: "bottoms", name: "Bottoms" },
+  { id: "accessories", name: "Accessories" },
 ];

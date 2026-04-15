@@ -26,7 +26,7 @@
   }
 
   body {
-    @apply bg-background text-text-strong font-secondary leading-none;
+    @apply bg-background text-text-strong h-[1000px] font-secondary leading-none;
   }
 
   h1,
@@ -102,6 +102,10 @@
     @apply content-[''] absolute bottom-0 left-0 h-px w-0 bg-primary transition-all duration-200 ease-in-out;
   }
 
+  .nav-link.active:after {
+    @apply w-full bg-text-muted;
+  }
+
   .nav-link:hover::after {
     @apply w-full;
   }
@@ -117,5 +121,19 @@
   /* Input */
   input {
     @apply py-4 px-3 ring ring-surface text-base hover:ring-border focus:ring-primary focus:outline-none leading-6 w-full rounded-lg text-primary;
+  }
+
+
+  /* shop page */
+  .shop-page {
+    @apply pt-[150px] px-4 md:px-12 lg:px-20 flex flex-col gap-7;
+
+    h2 {
+      @apply font-extrabold text-3xl md:text-4xl uppercase;
+    }
+
+    .pdt-grid-length {
+      @apply font-medium leading-7.5 md:leading-9;
+    }
   }
 }

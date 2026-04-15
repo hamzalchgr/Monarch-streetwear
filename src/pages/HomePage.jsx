@@ -32,7 +32,7 @@ const HomePage = () => {
         <div className="flex items-end justify-between">
           <div>
             <p className="font-medium text-base">OUR BESTSELLERS</p>
-            <h2 className="font-bold text-3xl">FEATURED</h2>
+            <h2 className="font-extrabold text-3xl md:text-4xl">FEATURED</h2>
           </div>
 
           <Link className="nav-link" to="/shop/all">view all</Link>
