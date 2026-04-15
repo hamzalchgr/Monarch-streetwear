@@ -75,7 +75,7 @@
 
 @layer components {
   header {
-    @apply fixed top-0 w-full;
+    @apply fixed top-0 w-full z-50;
   }
   
   .nav-menu {

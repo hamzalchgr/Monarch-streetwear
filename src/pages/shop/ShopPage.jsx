@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
-import PdtCard from "../components/product/PdtCard";
-import DisplayCategories from "./shop/DisplayCategories";
+import PdtCard from "../../components/product/PdtCard";
+import DisplayCategories from "./DisplayCategories";
 
 const pdt = {
   id: "product-0000-a",

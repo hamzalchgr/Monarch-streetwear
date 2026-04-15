@@ -25,7 +25,7 @@ const pdt = {
 
 const HomePage = () => {
   return (
-    <div className="pt-20 px-4 md:px-10 lg:px-20 flex flex-col gap-[25px] md:gap-[50px] lg:gap-5">
+    <div className="pt-20 pb-10 px-4 md:px-10 lg:px-20 flex flex-col gap-[25px] md:gap-[50px] lg:gap-5">
       <Logo type="wordmark"/>
 
       <section className="flex flex-col gap-[50px]">
