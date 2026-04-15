@@ -23,3 +23,10 @@ export const CATEGORIES = [
   { id: "bottoms", name: "Bottoms" },
   { id: "accessories", name: "Accessories" },
 ];
+
+export const LEGAL = [
+  { label: "Terms & Conditions", id: "terms" },
+  { label: "Privacy Policy", id: "privacy" },
+  { label: "Refund Policy", id: "refund" },
+  { label: "Shipping Policy", id: "shipping" },
+];
