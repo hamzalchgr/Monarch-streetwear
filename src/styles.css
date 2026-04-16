@@ -17,7 +17,7 @@
 
   /* ===== TYPOGRAPHY ===== */
   --font-primary: "Mona Sans", sans-serif;
-  --font-secondary: "IBM Plex Mono", monospace;
+  --font-secondary: "IBM Plex Sans", monospace;
 }
 
 @layer base {

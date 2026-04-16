@@ -1,11 +1,7 @@
 import ImgList from "./ImgList";
 import PdtGallery from "./PdtGallery";
 
-import { formatPrice } from "../../utils/formatPrice";
-
-import SizeSelector from "./SizeSelector";
-import Button from "../../components/ui/Button";
-import { ShoppingBag } from "lucide-react";
+import ProductInfo from "./ProductInfo";
 
 const pdt = {
   id: "product-0000-a",
@@ -43,26 +39,11 @@ const ProductPage = () => {
         </div>
       </div>
 
-      <div className="p-4 md:p-10 lg:p-7 flex flex-col gap-10">
-        <div className="flex flex-col gap-2">
-          <h3 className="p-2 bg-surface w-fit uppercase font-semibold text-sm">
-            bottoms
-          </h3>
-          <h2 className="uppercase font-bold text-2xl">{pdt.title}</h2>
-          <p className="font-medium text-xl">€{formatPrice(pdt.price)}</p>
-        </div>
-
-        <p className="font-medium uppercase">{pdt.description}</p>
-
-        <SizeSelector />
-
-        <Button variant="primary" size="lg" className="gap-3">
-          <span>
-            <ShoppingBag strokeWidth={2} size={20} />
-          </span>
-          <span>add to bag</span>
-        </Button>
-      </div>
+      <ProductInfo
+        title={pdt.title}
+        price={pdt.price}
+        description={pdt.description}
+      />
     </div>
   );
 };
