@@ -19,7 +19,7 @@ const Footer = () => {
           <p>SUBSCRIBE TO OUR NEWSLETTER</p>
 
           <form className="flex flex-col gap-2" action="">
-            <input type="email" placeholder="mark@monark.com" required />
+            <input type="email" placeholder="mark@monarch.com" required />
             <Button variant="primary" size="lg" type="submit">
               subscribe
             </Button>

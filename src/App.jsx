@@ -5,6 +5,7 @@ import Auth from "./pages/auth/Auth";
 import ShopPage from "./pages/shop/ShopPage";
 import Layout from "./components/layout/Layout";
 import NotFound from "./pages/NotFound";
+import ProductPage from "./pages/product/ProductPage";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
         <Route path="/" element={<Layout />}>
           <Route path="/" element={<HomePage />} />
           <Route path={"/shop/:category"} element={<ShopPage />} />
+          <Route path={"/productPage/:id"} element={<ProductPage />} />
         </Route>
         
         <Route path="/auth" element={<Auth />} />
