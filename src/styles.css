@@ -135,6 +135,12 @@
     .pdt-grid-length {
       @apply font-medium leading-7.5 md:leading-9;
     }
+
+
+    /* Search bar */
+    /* .search-bar {
+      @apply ;
+    } */
   }
 
 

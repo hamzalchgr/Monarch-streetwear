@@ -6,11 +6,14 @@ import { Search, ShoppingBag, User } from "lucide-react";
 import { useState } from "react";
 import clsx from "clsx";
 import NavList from "./NavList";
+import SearchBar from "../search/SearchBar";
 
 const Header = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
+  const [searchOpen, setSearchOpen] = useState(false);
 
   const toggleNav = () => setIsNavOpen(!isNavOpen);
+  const toggleSearch = () => setSearchOpen(!searchOpen);
 
   return (
     <>
@@ -23,7 +26,12 @@ const Header = () => {
           <NavList className="nav-list" />
 
           <div className="flex items-center gap-2 md:gap-4 justify-end">
-            <Button size="sm" variant="secondary" className="flex-none">
+            <Button
+              size="sm"
+              variant="secondary"
+              className="flex-none"
+              onClick={toggleSearch}
+            >
               <Search size={20} />
             </Button>
 
@@ -65,6 +73,8 @@ const Header = () => {
             onClick={(e) => e.stopPropagation()}
           />
         </div>
+
+        <SearchBar toggleSearch={toggleSearch} searchOpen={searchOpen} />
       </header>
       <Outlet />
     </>

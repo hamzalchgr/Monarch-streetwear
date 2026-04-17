@@ -41,10 +41,10 @@ const CartPage = () => {
           </ul>
         </div>
 
-        <div className="flex flex-col gap-2 uppercase">
+        <div className="flex flex-col gap-8 uppercase">
           <h2 className="font-bold text-xl uppercase">Summary</h2>
 
-          <div className="flex flex-col gap-4 py-6">
+          <div className="flex flex-col gap-4">
             <div className="flex justify-between font-medium">
               <span>Subtotal</span>
               <span>€120</span>
@@ -63,6 +63,8 @@ const CartPage = () => {
               <span>€120</span>
             </div>
           </div>
+
+          <p className="font-medium text-text-muted">Items in your bag are not reserved — check out now to make them yours.</p>
 
           <Button variant="primary" size="lg" >checkout</Button>
         </div>
