@@ -9,16 +9,13 @@ const DELIVERY_RETURNS = [
     title: "Delivery",
     items: [
       "Processed within 1–2 business days",
-      "Worldwide shipping available",
-      "Free shipping over €200",
+      " Worldwide shipping available",
+      " Free shipping over €200",
     ],
   },
   {
     title: "Returns",
-    items: [
-      "Returns accepted within 14 days",
-      "Items must be unworn and in original condition",
-    ],
+    items: "30-day return policy: Return items within 30 days for a refund or exchange. Refunds go back to the original payment method, while store credit purchases can only be returned as store credit.",
   },
 ];
 

@@ -27,6 +27,8 @@ const pdt = {
 
 const ProductPage = () => {
   return (
+
+    <>
     <div className="pt-15 grid grid-cols-1 lg:grid-cols-[2fr_1fr]">
       <div>
         <div className="lg:hidden">
@@ -45,6 +47,16 @@ const ProductPage = () => {
         description={pdt.description}
       />
     </div>
+
+    <div className="px-4 md:px-10 lg:px-20 py-10 font-bold text-3xl flex flex-col gap-5">
+      <h2 className="">YOU MAY ALSO LIKE</h2>
+
+      {/* product grid */}
+      <u>
+        <li></li>
+      </u>
+    </div>
+    </>
   );
 };
 

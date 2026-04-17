@@ -23,7 +23,7 @@ const SizeSelector = () => {
             <button
               type="button"
               className={clsx(
-                "h-11 w-full cursor-pointer rounded-lg",
+                "h-11 w-full cursor-pointer rounded-md",
                 selected === label ? "bg-primary text-accent" : "text-text-strong border border-border"
               )}
               aria-label={`size: ${id}`}
