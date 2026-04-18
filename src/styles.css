@@ -33,7 +33,7 @@
   h2,
   h3,
   h4 {
-    @apply font-primary tracking-[-0.01em] leading-tight;
+    @apply font-primary tracking-[-0.04em] leading-tight;
   }
 }
 
@@ -145,6 +145,11 @@
     /* .search-bar {
       @apply ;
     } */
+  }
+
+  /* Article */
+  .article-card {
+    @apply grid items-start gap-7 grid-cols-1 md:grid-cols-[1fr_2fr_1fr];
   }
 
 
