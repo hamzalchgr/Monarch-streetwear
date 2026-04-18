@@ -62,7 +62,7 @@ const Header = () => {
         <div
           id="mobile-nav"
           className={clsx(
-            "fixed z-50 w-full top-15 md:hidden transition-all duration-200 ease-in-out",
+            "mobile-nav",
             isNavOpen ? "h-screen backdrop-blur-lg" : "h-0 overflow-hidden",
           )}
           onClick={() => isNavOpen && setIsNavOpen(false)}
