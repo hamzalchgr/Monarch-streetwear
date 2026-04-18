@@ -9,6 +9,7 @@ import ProductPage from "./pages/product/ProductPage";
 import CartPage from "./pages/CartPage";
 import SearchPage from "./pages/SearchPage";
 import BlogPage from "./pages/BlogPage";
+import ContactPage from "./pages/ContactPage";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
           <Route path={"/productPage/:id"} element={<ProductPage />} />
           <Route path={"/searchPage/:query"} element={<SearchPage />} />
           <Route path={"/blogPage"} element={<BlogPage />} />
+          <Route path={"/contactPage"} element={<ContactPage />} />
         </Route>
         
         <Route path="/auth" element={<Auth />} />

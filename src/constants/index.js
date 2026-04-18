@@ -12,7 +12,7 @@ export const navLinks = [
   {
     id: "contact",
     label: "contact",
-    path: "/contact",
+    path: "/contactPage",
   },
 ];
 

@@ -123,7 +123,7 @@
   }
 
   /* Input */
-  input {
+  input, textarea {
     @apply py-4 px-3 ring ring-surface text-base hover:ring-border focus:ring-primary focus:outline-none leading-6 w-full rounded-lg text-primary;
   }
 
