@@ -3,7 +3,7 @@ import Input from "../components/ui/Input";
 
 const ContactPage = () => {
   return (
-    <div className="px-4 md:px-12 lg:px-20 pt-30 pb-20">
+    <div className="px-4 md:px-12 lg:px-20 pt-30 pb-20 flex flex-col gap-15">
       <div className="flex flex-col gap-2">
         <p className="font-medium uppercase">SUPPORT</p>
         <h2 className="font-extrabold text-3xl md:text-4xl">NEED HELP?</h2>
